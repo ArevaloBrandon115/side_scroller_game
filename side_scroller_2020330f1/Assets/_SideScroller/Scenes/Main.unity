@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44656676, g: 0.49640185, b: 0.5748129, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657093, g: 0.49640578, b: 0.5748139, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,63 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &350051172
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.432015
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.09314442
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.8751512
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917970, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925434716614917974, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
-      propertyPath: m_Name
-      value: Capsule
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5cd77f92885bd2c489db07c2c15dd977, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
