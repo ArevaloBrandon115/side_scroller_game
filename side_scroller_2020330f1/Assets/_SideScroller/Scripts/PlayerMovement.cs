@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        Debug.Log(horizontalMove = Input.GetAxisRaw("Horizontal") * sanicRun);
+        horizontalMove = Input.GetAxisRaw("Horizontal") * sanicRun;
         
     }
     void FixedUpdate() { //move character
