@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 	[Space]
 
 	public UnityEvent OnLandEvent;
+	public UnityEvent OffLandEvent;
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
@@ -39,12 +40,15 @@ public class PlayerController : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+		 
+		if (OffLandEvent == null)
+			OffLandEvent = new UnityEvent();
 	}
 
 	private void FixedUpdate()
 	{
 		bool wasGrounded = m_Grounded;
-		m_Grounded = false;
+		m_Grounded = false; //player on the ground
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -53,10 +57,20 @@ public class PlayerController : MonoBehaviour
 		{
 			if (colliders[i].gameObject != gameObject)
 			{
-				m_Grounded = true;
+
+				m_Grounded = true; //not on the ground
+			
+				
+
 				if (!wasGrounded)
+				{
 					OnLandEvent.Invoke();
+
+				}
+
 			}
+            
+            
 		}
 	}
 
@@ -128,7 +142,7 @@ public class PlayerController : MonoBehaviour
 		if (m_Grounded && jump)
 		{
 			// Add a vertical force to the player.
-			m_Grounded = false;
+			m_Grounded = true;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
 	}
